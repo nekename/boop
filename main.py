@@ -23,11 +23,11 @@ bot = Bot(command_prefix = "?", intents = intents)
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity = discord.Streaming(
-        name = "Delta Client",
-        url = "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+    await bot.change_presence(activity = discord.Activity(
+        type = discord.ActivityType.watching,
+        name = "OpenDeck on GitHub"
     ))
-    print("Delta Bot is ready!")
+    print("Boop is ready!")
 
 bot_token = getenv("BOT_TOKEN")
 if not bot_token:

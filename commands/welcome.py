@@ -13,9 +13,9 @@ class Welcome(commands.Cog):
             print("Failed to get welcome channel")
             return
 
-        message = f"I'm **DeltaBot**, the server's official bot. Type `/` to see available commands.\n"
-        message += "Please support the project by **leaving us a star on [GitHub](https://github.com/stackotter/delta-client)** :star:\n"
-        message += "If you want to go above and beyond, **please consider [sponsoring](https://github.com/sponsors/stackotter) the project** :heart:"
+        message = "I'm **Boop**, this server's friendly robot. Type `/` to see available commands.\n"
+        message += "Please support the project by **leaving us a star on [GitHub](https://github.com/nekename/OpenDeck)** :star:\n"
+        message += "If you want to go above and beyond, **please consider [sponsoring](https://github.com/sponsors/nekename) development** :heart:"
         embed = discord.Embed(color = discord.Colour.dark_gray())
         embed.add_field(name = "**Welcome!**", value = message)
 
