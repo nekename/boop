@@ -6,12 +6,14 @@ from os import getenv
 
 from commands.welcome import Welcome
 from commands.urls import Urls
+from commands.faq import Faq
 
 load_dotenv()
 
 class Bot(dBot):
     async def setup_hook(self) -> None:
         await self.add_cog(Urls(bot))
+        await self.add_cog(Faq(bot))
         await self.add_cog(Welcome(bot))
         await self.tree.sync()
         self.remove_command("help")

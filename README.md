@@ -6,6 +6,7 @@ Boop is a Discord bot that helps out with the OpenDeck community.
 
 - Greets new users and points them toward helpful OpenDeck resources
 - Provides slash commands for key OpenDeck pages (GitHub, issues, pull requests, releases, and discussions)
+- Includes a `/faq` slash command that searches the OpenDeck FAQ wiki page and returns the closest match
 
 ## Running the bot
 
